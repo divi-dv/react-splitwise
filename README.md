@@ -1,3 +1,8 @@
+<img width="853" alt="image" src="https://github.com/divi-dv/react-splitwise/assets/149068336/e7a5c202-4c58-4e6e-a94e-a4d839f73278">
+
+<img width="414" alt="image" src="https://github.com/divi-dv/react-splitwise/assets/149068336/541a28ea-b3c1-4441-8f91-ec23e54b1d89">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
