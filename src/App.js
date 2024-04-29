@@ -46,6 +46,14 @@ function App() {
       }
     })
     setAllFriends(newAllFriend)
+    console.log(allFriends)
+    // Divi notes
+    // This will print the older value of allFriends instead of the one that we 
+    // have set 2 lines above
+    // This is due to State update batching i.e. set states are all batched together
+    // and performed in 1 go instead of updating each state one-by-one
+    // React reads all the setState lines in a function and updates the 
+    // states together
     setBillFriend("")
   }
   return (
@@ -67,7 +75,12 @@ function App() {
           }
       </div>
       {billFriend.length!==0 &&
-        <SplitBill name={billFriend} updateBalance={handleUpdateBalance}/>
+        <SplitBill name={billFriend} updateBalance={handleUpdateBalance} key={billFriend}/>
+        // Divi notes
+        // the key in the above element is very important, otherwise the elements won't
+        // be re-rendered when we click on the other friend
+        // This key makes each component instance of the SplitBill comp unique
+        // so React renders each instance differently
       }
     </div>
   );
